@@ -1,6 +1,9 @@
 Microsoft Azure Active Directory
 ================================
 
+Note: this article (and the backend) should be renamed after
+[Microsoft identity platform](https://docs.microsoft.com/en-us/azure/active-directory/develop/).
+
 To enable OAuth2 support:
 
 - Fill in ``Client ID`` and ``Client Secret`` settings. These values can be
@@ -25,7 +28,7 @@ To enable OAuth2 support:
 
       AUTHENTICATION_BACKENDS = (
           ...
-          'social_core.backends.azuread_tenant.AzureADOAuth2',
+          'social_core.backends.azuread.AzureADOAuth2',
           ...
       )
 
